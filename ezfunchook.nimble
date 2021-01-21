@@ -17,7 +17,7 @@ const link = "https://github.com/Element-0/Dependencies/releases/download/funcho
 
 task prepare, "Prepare funchook.dll":
   if not fileExists "./funchook.dll":
-    exec "curl -o funchook.dll " & link
+    exec "curl -Lo funchook.dll " & link
 
 before install:
   prepareTask()
